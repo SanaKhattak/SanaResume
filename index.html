@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js">
+ </script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" >
+
+<style type="text/css">
+
+*,
+*::before,
+*::after{
+
+	box-sizing: border-box;
+}
+
+*:focus{
+
+
+	outline: none;
+}
+
+body{
+	padding: 0;
+	margin:0;
+	background:#000;
+	color:white;
+	font-family: "Oxygen" , sans-serif;
+	}
+
+
+a{
+	text-decoration: none;
+color:green;
+}
+
+
+img{
+	width:100%;
+
+}
+
+.home img{
+
+	width:100%;
+	-webkit-filter;grayscale(100%)
+	contrast(100%);
+	filter:grayscale(100%) contrast(200%)
+	brightness(60%);
+}
+
+aside{
+	position: fixed;
+	background: #222;
+	top:0px;
+	left: 0px;
+	width: 120px;
+	height: 100%;
+	overflow: none;
+	z-index: 1;
+	text-align: center;
+	padding: 0;
+}
+
+aside img{
+	filter: grayscale(100%) contrast(50%);
+	brightness(100%);
+	margin-bottom: -3px;
+}
+
+aside a{
+
+	display: block;
+	padding: 15px 0;
+	color: white;
+	transition: all 0.35s;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	letter-spacing: 2px;
+}
+
+aside p{
+	margin:0;
+	padding-bottom: 3px;
+}
+
+aside a:hover{
+	background:#000;
+}
+
+aside nav a:nth-child(2){
+	background: #000;
+}
+ aside nav a:nth-child(2):hover{
+ 	background: #b2b2b2;
+ 	color: #222;
+ }
+
+ main{
+ 
+ max-width: 980px;
+ background: #000;
+ margin-left: 20%;
+ padding: 12px 50px 12px 50px;
+
+
+ }
+
+
+header{
+text-align:center;
+letter-spacing: 2px;
+}
+
+
+header h1{
+
+	font-weight: bold;
+	font-size: 3em;
+	letter-spacing: 4px;
+}
+
+header h5{
+
+	font-weight: 300;
+	font-size: 1 em;
+	letter-spacing: 3px;
+	color:#b2b2b2;
+	font-weight: bold;
+}
+
+.about,
+.research,
+.education,
+.professional,
+.project,
+.contact{
+
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+.about h2,
+.research h2,
+.education h2,
+.professional h2,
+.project h2,
+.contact h2{
+
+font-weight: 200px;
+text-transform: uppercase;
+padding-bottom: 10px;
+margin: 100px 0 0 0 0;
+letter-spacing: 2px;
+}
+
+
+.about p,
+.research p,
+.education p,
+.professional p,
+.project p,
+.contact p{
+	color: #b2b2b2;
+}
+.about span{
+	font-weight: 600px;
+	color: white;
+}
+
+.about h3{
+
+	font-weight: 300;
+	margin: 50px 0;
+}
+
+.address {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.inner-address p {
+  font-size: 12px;
+}
+ 
+.inner-address .fas {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+
+.html{
+	width: 90%;
+}
+.css{
+	width: 85%;
+}
+.js{
+	width: 65%;
+}
+.php{
+	width:60%;
+}
+
+@media (max-width: 601px){
+	aside{
+		display: none;
+
+	}
+	main{
+		width: 100%;
+		margin: 0 auto;
+		padding: 12px 25px;
+	}
+	header{
+		margin-top:80px;
+	}
+	header h1{
+		font-size: 3em;
+		line-height: 1.4em;
+	}
+
+	header h5{
+		font-size: 3em;
+		line-height: 1.4em;
+	}
+	.mobile-nav{
+		position: fixed;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		background: rgba(0,0,0,0.8);
+		z-index: 1;
+
+	}
+
+	.mobile-nav a{
+		width: 100%;
+		color:#b2b2b2;
+		text-transform: uppercase;
+		font-size: 0.875em;
+		letter-spacing: 2px;
+		text-align: center;
+		padding: 10px 10px;
+		transition: all 0.35s;
+	}
+}
+	
+</style>
+</head>
+
+
+
+
+
+<body>
+
+
+<aside>
+    <nav>
+        <img src="bk.jpg" alt="">
+
+        
+        <a href="#about"><i class="fas fa-female" style="font-size: 30px;"></i>
+        <p> About Me</p>
+        </a>
+
+        <a href="#education"><i class="fas fa-graduation-cap" style="font-size: 30px;"></i> 
+        <p>Education</p>
+        </a>
+
+        <a href="#research"> <i class="fas fa-book-open" style="font-size: 30px;"></i>
+        <p> Research Work</p>
+        </a>
+
+        <a href="#professional"><i class="fas fa-briefcase" style="font-size: 30px;"> </i> 
+        <p>Professional Experience</p>
+        </a>
+
+        <a href="#project"><i class="fas fa-file-alt" style="font-size: 30px;"> </i> 
+        <p>Project Report</p>
+        </a>
+
+        <a href="#contact"><i class="fas fa-envelope" style="font-size: 30px;"> </i>
+         <p>Contact Details</p>
+        </a>
+    </nav>
+</aside>
+
+
+
+
+
+<main>
+     <header class="home" id="home"><br><br>
+            <h1>Sana Khattak</h1>
+            <h5>Research Assistant</h5>
+            <h5>National Center for Cyber Security</h5>
+            <img src="sid.jpg" alt="">
+	     </header>
+</main>
+
+
+
+
+
+<main>
+
+<section class="about" id="about">
+<h2>About me</h2>
+<p>
+<span>Hello, I am Sana Khattak.</span> I am Research Assistant, life long learner and ready for new opportunities.
+</p>
+
+<p> I believe that "A good teacher can inspire hope, ignite the imagination, and instill a love of learning".
+Therefore my future goal is also to secure a teaching position in an organization that would
+ fully employ my personal skills, my 
+experience as well as my academic training in a rewarding career
+ that affords professional and personal growth.
+</p>
+</div>
+</section>
+</main>
+
+
+<main>
+<section class="education" id="education">
+<h2>Education</h2>
+<ul>
+<li>BSC</li>
+<p>
+<a href="http://www.uop.edu.pk/"  >University Of Peshawar</a>
+</p>
+<li>MSC</li>
+<p>
+<a href="http://www.uop.edu.pk/">University Of Peshawar</a>
+</p>
+<li>MS</li>
+<p>
+<a href=http://www.uetpeshawar.edu.pk/>University Of Engineering and Technology Peshawar</a>
+</p>
+</ul>
+</section>
+</main>
+
+
+<main>
+<section class="research" id="research">
+<h2>RESEARCH WORK</h2>
+<ul>
+ <li> <p> Master's Thesis:Research based work on breaking visual captcha with pattern recognition algorithm (image processing)</p></li>
+   <li> <p> Research Paper <q>A study of the effectiveness of an introductory computer course on students performance and attitude .</q>
+(Published In: British Journal of Mathematics & Computer Science  15(5):1-16,2016, article No. Bjmcs.24989)
+</p></li>
+   <li> <p> Currently working on Security of internet banking in Pakistan</p></li>
+    </ul>
+</section>
+</main>
+
+
+
+<main>
+<section class="professional"  id="professional">
+<h2>Professional Experience</h2>
+<ul>
+<li><p>Research Assistant <a href="http://www.nccs.pk/">National Center for Cyber Security </a>(January 2019 to Present) </p></li>
+ <li><p> Lecturer <a href="https://www.qu.edu.sa/">Qassim University Saudi Arabia</a>
+(December 31, 2011 – August 19,2017 ) 
+  </p></li>
+  </ul>
+</section>
+</main>
+
+
+
+
+
+
+
+
+<main>
+<section   class="project"  id="project">
+<h2>Project Progress Report</h2>
+   <ul>
+   <li> <p>My Project one was about writing a review paper I chose the Topic "Smart Cities ,IoT and Cloud Computing" ,to write the best research paper we studied more than 20 research papers,we created an online excel worksheet to work in collaboration with my group memember I wrote the abstraction,applications, conclusion section and refrences section . we used to have weekliy meeetings with our Teacher to update him about our work.</p></li>
+  
+   <li> <p>In Project Two I was asked to continue with Project one which was the review paper I Updated the abstraction ,added more applications and advantages and expanded the challanges section </p></li>
+  
+   <li> <p>Hopefully Project Three is the last project in which we were assigned to make our online resume for that purpose I worked in HTML and CSS and here is the output </p></li>
+
+
+</ul>
+
+	</section>
+	</main>
+
+
+	<main>
+	<section   class="contact"  id="contact">
+	<h2>Contact Information</h2>
+	
+
+	<div class="address">
+    
+    <div class="inner-address">
+      <i class="fas fa-envelope"></i>
+      <p><a href="khattaksana6@gmail.com" style="color: green">khattaksana6@gmail.com</a></p>
+    </div>
+    <div class="inner-address">
+      <i class="fab fa-linkedin-in"></i>
+      <p><a href="https://pk.linkedin.com/" style="color: green"> linkedin</a></p>
+    </div>
+
+    <div class="inner-address">
+      <i class="fas fa-map-marker-alt"></i>
+      <p><a href="https://en.wikipedia.org/wiki/Nowshera,_Khyber_Pakhtunkhwa" style="color: green"> Nowshera,KP,Pakistan</a></p>
+     
+    </div>
+  </div>
+
+			
+
+
+		</section>
+
+	</main>
+
+</body>
+</html>
